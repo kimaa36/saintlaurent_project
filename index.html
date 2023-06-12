@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAINT LAURENT</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  
+  <script defer src="./js/jquery-1.12.3.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script defer src="./js/slick.min.js"></script>
+  <script defer src="./js/slick.js"></script>
+  <script defer src="./js/main.js"></script>
+
+  <!-- 유튜브API js연결 -->
+  <script defer src="./js/youtube.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1><a href="index.html"><img src="./images/logo_white.png" alt="SAINT LAURENT"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">여성쇼핑</a>
+            <ul class="sub">
+              <li><a href="#">NEW - SUMMER 23</a></li>
+              <li><a href="#">NEW - SPRING 23</a></li>
+              <li><a href="#">RESORT</a></li>
+              <li><a href="#">레디 투 웨어</a></li>
+              <li><a href="#">슈즈</a></li>
+              <li><a href="#">핸드백</a></li>
+              <li><a href="#">미니백</a></li>
+              <li><a href="#">가죽소품</a></li>
+              <li><a href="#">벨트와 벨트 백</a></li>
+              <li><a href="#">액세서리</a></li>
+              <li><a href="#">선글라스</a></li>
+              <li><a href="#">주얼리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">남성쇼핑</a>
+            <ul class="sub">
+              <li><a href="#">NEW - SPRING SUMMER 23</a></li>
+              <li><a href="#">RESORT</a></li>
+              <li><a href="#">레디 투 웨어</a></li>
+              <li><a href="#">슈즈</a></li>
+              <li><a href="#">핸드백</a></li>
+              <li><a href="#">가죽소품</a></li>
+              <li><a href="#">벨트와 벨트 백</a></li>
+              <li><a href="#">주얼리</a></li>
+              <li><a href="#">액세서리</a></li>
+              <li><a href="#">선글라스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">주얼리</a>
+          </li>
+          <li>
+            <a href="#">컬렉션</a>
+            <ul class="sub">
+              <li><a href="#">NEW - SUMMER 23</a></li>
+              <li><a href="#">NEW - SPRING 23</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">내정보</a>
+            <ul class="sub">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">장바구니</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="hamburger-menu">
+          <div class="bar-top"></div>
+          <div class="bar-middle"></div>
+          <div class="bar-bottom"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- B : YOUTUBE VIDEO -->
+  <section class="youtube">
+    <h2 class="hidden">유투브 영역</h2>
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+  </section>
+
+  <!-- C : SLIDE area -->
+  <section id="slide">
+    <h2 class="hidden">slide</h2>
+    <ul>
+      <li><a href="#"><img src="./images/slide1.png" alt="WOMEN'S WINTER 23"></a></li>
+      <li><a href="#"><img src="./images/slide2.png" alt="MEN'S WINTER 23"></a></li>
+      <li><a href="#"><img src="./images/slide3.png" alt="MEN'S WINTER 23"></a></li>
+      <li><a href="#"><img src="./images/slide4.png" alt="WOMEN's SUMMER 23"></a></li>
+      <li><a href="#"><img src="./images/slide5.png" alt="MEN's SPRING SUMMER 23"></a></li>
+    </ul>
+  </section>
+
+  <!-- D area -->
+  <section class="img-info">
+    <h2 class="hidden">img-info</h2>
+    <div class="txt1">
+      <p data-aos="fade-right" class="txt1__txt1">WOMEN'S</p>
+      <p data-aos="fade-right" class="txt1__txt2">WINTER 23</p>
+      <p data-aos="fade-right" class="txt1__txt3">BY ANTHONY</p>
+      <p data-aos="fade-right" class="txt1__txt4">VACCARELLO</p>
+    </div>
+    <div class="img1">
+      <a href="#" data-aos="fade-up" class="img1__img1"><img src="./images/img1-img1.png" alt="img1"></a>
+      <a href="#" data-aos="fade-up" class="img1__img2"><img src="./images/img1-img2.png" alt="img1"></a>
+      <a href="#" data-aos="fade-up" class="img1__img3"><img src="./images/img1-img3.png" alt="img1"></a>
+    </div>
+  </section>
+  <section class="img-info">
+    <h2 class="hidden">img-info</h2>
+    <div class="img2">
+      <a href="#" data-aos="fade-left" class="img2__img1"><img src="./images/img2-img1.png" alt=""></a>
+      <a href="#" data-aos="fade-left" class="img2__img2"><img src="./images/img2-img2.png" alt=""></a>
+      <a href="#" data-aos="fade-left" class="img2__img3"><img src="./images/img2-img3.png" alt=""></a>
+    </div>
+    <div class="txt2">
+      <p data-aos="fade-up-right" class="txt2__txt1">파리 패션쇼</p>
+      <p data-aos="fade-up-right" class="txt2__txt2">생로랑 앰베서더</p>
+      <p data-aos="fade-up-right" class="txt2__txt3">로제</p>
+    </div>
+  </section>
+
+  <!-- E area -->
+  <section id="popular">
+    <h2>인기상품</h2>
+    <div class="popular-img">
+      <div><a href="#"><img src="./images/인기상품1.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품2.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품3.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품4.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품5.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품6.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품7.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품8.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품9.png" alt="인기상품"></a></div>
+      <div><a href="#"><img src="./images/인기상품10.png" alt="인기상품"></a></div>
+    </div>
+  </section>
+  
+  <!-- F area -->
+  <section id="new">
+    <h2>신상품</h2>
+    <div class="new-img">
+      <div><a href="#"><img src="./images/신상품1-1.png" alt="신상품"></a></div>
+      <div><a href="#"><img src="./images/신상품2-1.png" alt="신상품"></a></div>
+      <div><a href="#"><img src="./images/신상품3-1.png" alt="신상품"></a></div>
+      <div><a href="#"><img src="./images/신상품4-1.png" alt="신상품"></a></div>
+      <div><a href="#"><img src="./images/신상품5-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/신상품6-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/신상품7-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/신상품8-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/신상품9-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/신상품10-1.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품11.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품12.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품13.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품14.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품15.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품16.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품17.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품18.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품19.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품20.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품21.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품22.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품23.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품24.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품25.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품26.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품27.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품28.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품29.png" alt="신상품"></a></div>
+      <div class="hide"><a href="#"><img src="./images/인기상품30.png" alt="신상품"></a></div>
+    </div>
+    <button id="moreBtn" onclick="showMore()">더보기</button>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <div class="sns"><a href="#"><img src="./images/sns.png" alt="sns"></a></div>
+    <div class="foot-nav">
+      <ul>
+        <li><a href="#">커리어</a></li>
+        <li><a href="#">법적고지</a></li>
+        <li><a href="#">ACCESSIBILITY</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">주문추적</a></li>
+        <li><a href="#">배송</a></li>
+        <li><a href="#">반품</a></li>
+        <li><a href="#"> +82 261052228 이메일 라이브 채팅</a></li>
+        <li><a href="#">방문 예약하기</a></li>
+      </ul>
+    </div>
+    <div class="post">
+      <ul>
+        <li><a href="#">배송지</a></li>
+        <li><a href="#">대한민국(수정)</a></li>
+      </ul>
+    </div>
+    <div class="lang">
+      <ul>
+        <li><a href="#">언어</a></li>
+        <li><a href="#">한국어(수정)</a></li>
+      </ul>
+    </div>
+    <address>
+      사업자등록증에 기재된 회사명 :입생로랑코리아 유한책임회사<br>
+      사업자등록번호 211-88-87468<br>
+      회사 주소 : 대한민국 서울시 강남구 영동대로 517 아셈타워 13층<br>
+      사업자등록증에 기재된 대표자 성명 : 히로후미 탐보<br>
+      연락처: +82 26 10 52 228<br>
+      제2022-서울강남-06159호
+    </address>
+    </div>
+  </footer>
+
+  <!-- 햄버거메뉴 -->
+  <div class="hambuger">
+    <h2><a href="#"><img src="./images/logo_black.png" alt="logo"></a></h2>
+    <div class="close"><a href="#">닫기</a></div>
+    <nav>
+      <ul class="ham-gnb">
+        <li>
+          <a href="#">여성 쇼핑</a>
+          <ul class="ham-sub">
+            <li><a href="#">NEW - SUMMER 23</a></li>
+            <li><a href="#">NEW - SPRING 23</a></li>
+            <li><a href="#">RESORT</a></li>
+            <li><a href="#">레디 투 웨어</a></li>
+            <li><a href="#">슈즈</a></li>
+            <li><a href="#">핸드백</a></li>
+            <li><a href="#">미니백</a></li>
+            <li><a href="#">가죽소품</a></li>
+            <li><a href="#">벨트와 벨트 백</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#">선글라스</a></li>
+            <li><a href="#">주얼리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">남성 쇼핑</a>
+          <ul class="ham-sub">
+            <li><a href="#">NEW - SPRING SUMMER 23</a></li>
+            <li><a href="#">RESORT</a></li>
+            <li><a href="#">레디 투 웨어</a></li>
+            <li><a href="#">슈즈</a></li>
+            <li><a href="#">핸드백</a></li>
+            <li><a href="#">가죽소품</a></li>
+            <li><a href="#">벨트와 벨트 백</a></li>
+            <li><a href="#">주얼리</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#">선글라스</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">FINE JEWERY</a>
+        </li>
+        <li>
+          <a href="#">컬렉션</a>
+          <ul class="ham-sub">
+            <li><a href="#">여성 겨울 23</a></li>
+            <li><a href="#">겨울 남성 컬렉션23</a></li>
+            <li><a href="#">여성 여름 23</a></li>
+            <li><a href="#">남성 봄 여름 23</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">내정보</a>
+          <ul class="ham-sub">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">장바구니</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">선물</a>
+          <ul class="ham-sub">
+            <li><a href="#">그녀를 위한</a></li>
+            <li><a href="#">그를 위한</a></li>
+            <li><a href="#">라이프 스타일</a></li>
+            <li><a href="#">향수</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">LA MAISON</a>
+          <ul class="ham-sub">
+            <li><a href="#">YVES SAINT LAURENT</a></li>
+            <li><a href="#">지속 가능성</a></li>
+            <li><a href="#">ARCHIVES</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">SAINT LAURENT SELF</a>
+          <ul class="ham-sub">
+            <li><a href="#">SELF 07</a></li>
+            <li><a href="#">SELF 06</a></li>
+            <li><a href="#">SELF 05</a></li>
+            <li><a href="#">SELF 04</a></li>
+            <li><a href="#">SELF 03</a></li>
+            <li><a href="#">SELF 02</a></li>
+            <li><a href="#">SELF 01</a></li>
+            <li><a href="#">SELF</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">SAINT LAURENT PROCUDTIONS</a>
+          <ul class="ham-sub">
+            <li><a href="#">JEAN_LUC GODARD</a></li>
+            <li><a href="#">PEDRO ALMODOVAR</a></li>
+            <li><a href="#">GASPAR NOE</a></li>
+            <li><a href="#">WONG KAR WAI</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- TOP BUTTON -->
+  <div id="to-top">
+    <span class="material-symbols-outlined">
+      arrow_upward
+    </span>
+  </div>
+</body>
+</html>
