@@ -1,11 +1,3 @@
-// menu
-$('header nav > ul > li').mouseenter(function(){
-  $(this).find('.sub').stop().show();
-});
-$('header nav > ul > li').mouseleave(function(){
-  $(this).find('.sub').stop().hide();
-});
-
 // C-slide
 const imgFirst1 = $("#slide ul li:first").clone();
 imgFirst1.appendTo($("#slide ul"));
